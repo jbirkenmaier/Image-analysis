@@ -1,6 +1,6 @@
 import luminance as lu
 
-#Remember to place pictures of the form 'IMG_xxx' in your directory 
+#Remember to place pictures of the form 'IMG_xxxx' in your directory 
 #The function 'analyze_all()' will only work for continuos naming of the pictures. For example IMG_0001, IMG_0003 ... will not work because there is IMG_0002 missing
 #You can use 'check_for_missing()' to make sure there are no pictures missing
 
