@@ -1,5 +1,6 @@
 # Image-analysis
 This project uses the Pillow library to find out the number of light and dark pixels according to a threshold set by the user for all images in the directory of the form IMG_XXXX.XXX <br />
+Feel free to copy "luminance.py" into your directory and import its functions, to use them in your projects. 
 
 num_all_pictures(format) <br />
 This function counts the number of pictures of the given format in the directory, returns an integer.<br />
