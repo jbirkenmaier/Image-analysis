@@ -1,5 +1,5 @@
 # Image-analysis
-This project uses the Pillow library to find out the number of light and dark pixels according to a threshold set by the user for all images in the directory of the form IMG_XXXX.XXX.
+This project uses the Pillow library to find out the number of light and dark pixels according to a threshold set by the user for all images in the directory of the form IMG_XXXX.XXX
 
 num_all_pictures(format) 
 This function counts the number of pictures of the given format in the directory, returns an integer.
@@ -19,4 +19,5 @@ Former will only work if there are no picture names missing. The function takes 
 example: check_for_missing("jpg", [0,0,0,1], [0,0,0,5]) -> finds all pictures missing in between IMG_0001 and IMG_0005. It also checks if IMG_0001 and IMG_0005 exist and will add them to the list of missing pictures if they do.
 
 analyze_all(format, start, averaging_range=1, brightness = 0, threshold=127.5)
-This function takes a threshold between 0 and 255 (127.5 is set by default) and from the RGB-Values of the pixels it calculates if the pixel is above or under that threshold. For all pictures in the directory it counts how many pixels are above or below the threshold. 
+This function takes a threshold between 0 and 255 (127.5 is set by default) and from the RGB-Values of the pixels it calculates if the pixel is above or under that threshold. For all pictures in the directory it counts how many pixels are above (pixel is counted as white) or below (pixel is counted as black) the threshold and returns three lists. Each first, every second, every third element and so on in every list belongs to one picture ([black_pixels], [white_pixels], [total_pixels]).
+example: analyze_all('jpg', [0,0,0,1], averaging_range=1, brightness = 0, threshold=127.5) -> analyses all pictures of format IMG_XXXX.jpg, starting with [0,0,0,1]
