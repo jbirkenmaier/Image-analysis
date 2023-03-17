@@ -8,13 +8,13 @@ num_all_pictures('jpg') <br />
 -> finds number of pictures with format jpg in the directory<br />
 
 find_first_picture(format)<br />
-This function finds the image with the lowest number and returns the ending as a list. For example out of a set (IMG_0001, IMG_0002, IMG_0003) it would return [0,0,0,1]<br />
+This function finds the image with the lowest number and returns it as a list. For example out of a set (IMG_0001, IMG_0002, IMG_0003) it would return [0,0,0,1]<br />
 example:<br /> 
 find_first_picture('png') <br /> 
 -> finds the image of format png with the lowest ending number and returns it as a list<br />
 
 find_last_picture(format))<br />
-This function finds the image of a given format with the highest number and returns the ending as a list. For example out of a set (IMG_0001, IMG_0002, IMG_0003) it would return [0,0,0,3]<br />
+This function finds the image of a given format with the highest number and returns it as a list. For example out of a set (IMG_0001, IMG_0002, IMG_0003) it would return [0,0,0,3]<br />
 example: <br />
 find_last_picture('jpg') <br />
 ->  finds the image of format jpg with the highest ending number and returns ending as a list<br />
