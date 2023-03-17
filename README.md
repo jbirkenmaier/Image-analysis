@@ -19,4 +19,4 @@ Former will only work if there are no picture names missing. The function takes 
 example: check_for_missing("jpg", [0,0,0,1], [0,0,0,5]) -> finds all pictures missing in between IMG_0001 and IMG_0005. It also checks if IMG_0001 and IMG_0005 exist and will add them to the list of missing pictures if they do.
 
 analyze_all(format, start, averaging_range=1, brightness = 0, threshold=127.5)
-This function is used to count the number of 
+This function takes a threshold between 0 and 255 (127.5 is set by default) and from the RGB-Values of the pixels it calculates if the pixel is above or under that threshold. For all pictures in the directory it counts how many pixels are above or below the threshold. 
