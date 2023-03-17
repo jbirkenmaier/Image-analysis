@@ -18,5 +18,5 @@ This function is used to check if there are pictures of a given format missing i
 Former will only work if there are no picture names missing. The function takes the format, the starting name (as a list) and the ending name (as a list) and checks if there are names missing in between these two. It returns (bool, []). The boolean value is set to True if there are pictures missing and False if not. 
 example: check_for_missing("jpg", [0,0,0,1], [0,0,0,5]) -> finds all pictures missing in between IMG_0001 and IMG_0005. It also checks if IMG_0001 and IMG_0005 exist and will add them to the list of missing pictures if they do.
 
-lu.analyze_all("jpg",start)
-analyze_all("jpg",start)
+analyze_all(format, start, averaging_range=1, brightness = 0, threshold=127.5)
+This function is used to count the number of 
