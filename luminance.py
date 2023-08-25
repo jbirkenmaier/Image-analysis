@@ -1,6 +1,7 @@
 from PIL import Image
 import numpy as np
 import os
+import time
 
 def picture_raise(pic_ending):
     pic_ending[3]+=1
