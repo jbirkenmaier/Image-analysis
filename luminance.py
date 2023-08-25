@@ -166,8 +166,3 @@ def analyze_all(format, start_picture, averaging_range=1, brightness = 0, thresh
             end_time = time.time()
             break #end of while loop
     return(black_pixels, white_pixels, total_pixels)
-
-    
-
-    
-
